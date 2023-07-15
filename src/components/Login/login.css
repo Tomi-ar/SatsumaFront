@@ -1,5 +1,6 @@
 .secondOption{
-  display: inline-block;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .loginButton{

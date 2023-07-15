@@ -13,19 +13,19 @@ const Login = () => {
       <div>
         <form className="search-bar">
           <Input
-            label="Email: "
+            label="Email:"
             type="text"
             placeholder="Email"
           ></Input>
           <Input
-            label="Contraseña: "
+            label="Contraseña:"
             type="password"
             placeholder="Contraseña"
           ></Input>
           <SearchButton className="button loginButton" type="submit">Ingresar</SearchButton>
         </form>
       </div>
-      <div className="secondOption">
+      <div className="container secondOption">
         <p>Aún no tienes cuenta?</p>
         <Link to="/register" className="loginButton">Registrate</Link>
       </div>
