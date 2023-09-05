@@ -5,6 +5,7 @@ const Input = (props) => {
     <div className='search-input'>
       <label className='search-input-item' htmlFor={props.id}>{props.label}</label>
       <input
+        className="serch-input-box"
         type={props.type}
         id={props.id}
         value={props.value}

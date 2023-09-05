@@ -11,7 +11,7 @@ const SearchHome = (props) => {
   const [palabraBusqueda, setPalabraBusqueda] = useState("");
   const [materials, setMaterials] = useState([]);
 
-  const URI = "http://localhost:8002/materiales/";
+  const URI = "https://lucent-scone-ba0a74.netlify.app/.netlify/functions/api/materiales";
 
   const getMaterials = () => {
     axios
@@ -37,11 +37,12 @@ const SearchHome = (props) => {
     } else {
       getByFrase();
     }
+    setSearchInput("")
   };
 
   const searchInputHandler = (event) => {
     setSearchInput(event.target.value);
-    console.log("search word: " + searchInput);
+    // console.log("search word: " + searchInput);
   };
 
   useEffect(() => {}, [materials]);
@@ -54,7 +55,7 @@ const SearchHome = (props) => {
         <form onSubmit={submitHandler} className="search-cont">
           <Input
             htmlFor="Search"
-            placeholder="Busca por material..."
+            placeholder=" Ingresa tu residuo..."
             type="text"
             id="Search"
             onChange={searchInputHandler}
@@ -83,6 +84,7 @@ const SearchHome = (props) => {
                 _id={mat._id}
               />
             ))}
+            <div className="end-box"></div>
           </>
         )}
       </div>

@@ -9,7 +9,7 @@ const MaterialDetail = (props) => {
   const [details, setDetails] = useState([]);
   const [comentarios, setComentarios] = useState([])
   const [loading, setLoading] = useState(false);
-  const URI = "http://localhost:8002/materiales/id/";
+  const URI = "https://lucent-scone-ba0a74.netlify.app/.netlify/functions/api/materiales/id/";
 
   useEffect(() => {
     setLoading(true);
