@@ -2,8 +2,8 @@
 [[redirects]]
   force = true
   from = "/*"
+  to = "/index.html"
   status = 200
-  to = "/build/index.html"
 [[headers]]
   for = "/*"
   [headers.values]
