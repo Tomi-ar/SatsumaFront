@@ -1,7 +1,7 @@
 
 [[redirects]]
   force = true
-  from = "/materiales/*"
+  from = "/*"
   status = 200
   to = "/.netlify/functions/api/:splat"
 [[headers]]
