@@ -11,7 +11,7 @@ const SearchHome = (props) => {
   const [palabraBusqueda, setPalabraBusqueda] = useState("");
   const [materials, setMaterials] = useState([]);
 
-  const URI = "https://lucent-scone-ba0a74.netlify.app/.netlify/functions/api/materiales";
+  const URI = "https://lucent-scone-ba0a74.netlify.app/.netlify/functions/api/materiales/";
 
   const getMaterials = () => {
     axios
