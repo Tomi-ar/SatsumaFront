@@ -1,5 +1,7 @@
 .secondOption{
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .loginButton{

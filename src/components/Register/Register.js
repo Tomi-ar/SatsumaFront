@@ -113,6 +113,8 @@ const RegisterForm = () => {
         <p>Ya estás registrado?</p>
         <Link to="/login" className="loginButton">Ir a Login</Link>
       </div>
+      <div className="end-box"></div>
+      <div className="end-box"></div>
     </div>
   )
 }
